@@ -1,0 +1,96 @@
+.input-container {
+    position: relative;
+    margin-top: 7%;
+
+    select {
+        &.custom-select {
+            background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) right .75rem center/12px 10px no-repeat;
+            -webkit-appearance: none;
+            color: #9F9F9F;
+            margin-left: 10px;
+            }
+        }
+    .viewer {
+        position: absolute;
+        top: 4px;
+        right: 0;
+        z-index: 2;
+        display: block;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+    }
+    input {
+      outline: none;
+      z-index: 1;
+      position: relative;
+      background: none;
+      width: 100%;
+      border: 0;
+      color: #212121;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 10px 20px;
+
+      &.error-input {
+        border: 1px solid red;
+        border-radius: 5px;
+       }
+
+      &:focus {
+        //   border:1px solid red;
+        ~ label {
+          color: #9d9d9d;
+          transform: translate(-11%, -90%) scale(0.75);
+          background-color: white;
+          z-index: 50;
+          // padding:0 5px;
+          left:4%;
+        }
+      }
+
+      &:valid { 
+        ~ label {
+          color: #9d9d9d;
+          transform: translate(-11%, -90%) scale(0.75);
+          z-index: 100;
+          background-color: white;
+        }
+      }
+
+    }
+
+    label {
+      position: absolute;
+      top: 9px;
+      left: 4%;
+      color: #9F9F9F;
+      font-size: 15px;
+      font-weight: 300;
+      transition: 0.2s ease;
+    }
+  }
+
+   .login-form {
+    padding: 10% 30%;
+   }
+
+   .password-span{
+    color: #9F9F9F;
+   }
+
+  .dummy-heading{
+    background-color: #286EFA;
+    .box{
+      padding: 55% 20%;
+    }
+  }
+
+ footer{
+   p{
+     small{
+       color:#393939;
+     }
+   }
+ }
